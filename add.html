@@ -1,0 +1,20 @@
+<html>
+<head><title>Calc</title>
+<script>
+function add()
+{
+var num1,num2,sum;
+num1= parseInt(document.getElementByID("fnum").value);
+num2=parseInt(document.getElementByID("snum").value);
+sum=num1+num2;
+document.getElementByID("sum").value=sum;
+}
+
+</head>
+
+<body>
+<p> <label> Enter first Number :<label><input id="fnum"> </p>
+<p> <label> Enter Second Number :<label><input id="snum"> </p>
+<button onClick="add()">Add</button>
+<p> <label> Sum of two numbers is :<label><input id="sum"> </p>
+</html>
